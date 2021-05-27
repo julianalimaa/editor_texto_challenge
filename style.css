@@ -1,0 +1,11 @@
+*{
+    background-color: #051D3B;
+}
+
+.logo {
+    position: absolute;
+    width: 145px;
+    height: 34.05px;
+    left: 0px;
+    top: 12px;
+}
