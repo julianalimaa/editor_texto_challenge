@@ -3,32 +3,25 @@
 }
 
 .barra_navegacao {
-  width:1376px;
+  display: flex;
   height:56px;
-  margin:32px auto;
+  align-items: center;
 }
 
 .logo {
-  position: absolute;
-  width: 145px;
-  height: 56px;
   left: 0px;
   top: 12px;
+  height: 56px;
 }
 
 .botao_buscar {
-    display: flex; 
-    flex-direction: column;
-    align-items:flex-start;
-    position: static;
-    margin: 12px auto 0 auto;
-    width: 752px;
-    height: 56px;
+    margin: auto;
     border-radius: 8px;
     left: 0px;
     top: 0px;
     background: rgba(255,255,255,0.16);
-    padding: 0 14px;
+    width: 40%;
+    padding: 14px 16px;
 }
 
 ::-webkit-input-placeholder {
@@ -41,7 +34,6 @@
 }
 
 .imagem_circulo {
-  display: flex;
   width:50px;
   height:50px;
 }
