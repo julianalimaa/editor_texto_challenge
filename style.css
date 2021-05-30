@@ -6,6 +6,7 @@
   display: flex;
   height:56px;
   align-items: center;
+  margin: 1em 1.5em;
 }
 
 .logo {
@@ -31,6 +32,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
+  opacity: 0.56;
 }
 
 .imagem_circulo {
@@ -44,3 +46,61 @@
   object-fit: cover;
   border-radius: 50px;
 }
+
+.nome_usuario{
+  font-family: 'Inter', sans-serif;
+  font-size: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-left: 1em;
+}
+
+.menu_navegacao{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Inter', sans-serif;
+  font-size: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-left:32px;
+}
+
+.item_menu {
+  display: flex;
+  align-items: center;
+  opacity: 0.56;
+  margin-bottom: 16px;
+}
+
+.item_menu_selecionado{
+  opacity: 1;
+}
+
+.item_menu p {
+  margin-left: 16px;
+}
+
+
+.fa-code {
+  background-color: #5081FB;
+  display:block;
+  padding: 16px 14px;
+  border-radius: 16px;
+}
+
+.fa-users {
+  background-color: rgba(80, 129, 251, 0.16);
+  display:block;
+  padding: 16px 14px;
+  border-radius: 16px;
+  color: #ffffff;
+}
+
+
+
+

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/0d9c088d0b.js" crossorigin="anonymous"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
     </style>
@@ -12,15 +13,31 @@
   </head>
   <body>
     <header>
-      <div class="barra_navegacao">
+      <section class="barra_navegacao">
         <img src="imagens/image.png" class="logo" />
-        <input placeholder="Busque por algo" class="botao_buscar"/>
+        <input placeholder="Busque por algo" class="botao_buscar" />
         <span class="imagem_circulo">
-          <img src="imagens/avatar.jpg" class="avatar_usuario"/>
+          <img src="imagens/avatar.jpg" class="avatar_usuario" />
         </span>
-      </div>
+        <p class="nome_usuario">Hermione</p>
+      </section>
     </header>
-
-    <main></main>
+    
+    <main>
+      <section class="menu_navegacao">
+        <p>MENU</p>
+        <div class="item_menu" onclick="selecionaMenu(this)">
+          <i class="fas fa-code" ></i>
+          <p>Editor de texto</p>
+        </div>
+        <div class="item_menu" onclick="selecionaMenu(this)">
+          <i class="fas fa-users"></i>
+          <p>Comunidade</p>
+        </div>
+      </section>
+      <p></p>
+    </main>
+    <script src="menuLateral.js"></script>
   </body>
+
 </html>
