@@ -1,32 +1,39 @@
 * {
-  background-color: #051d3b;
+  background-color: #051D3B;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .barra_navegacao {
   display: flex;
-  height:56px;
+  justify-content: space-between;
+  height: 56px;
   align-items: center;
-  margin: 1em 1.5em;
+  width:100%;
+  margin-top: 32px;
 }
 
-.logo {
-  left: 0px;
-  top: 12px;
+.logo{
+  width:20%;
+}
+
+.logo_img {
+  margin: 12px 82px 0 20px;
   height: 56px;
 }
 
 .botao_buscar {
-    margin: auto;
-    border-radius: 8px;
-    left: 0px;
-    top: 0px;
-    background: rgba(255,255,255,0.16);
-    width: 40%;
-    padding: 14px 16px;
+  border-radius: 8px;
+  left: 0px;
+  top: 0px;
+  background: rgba(255, 255, 255, 0.16);
+  width: 50%;
+  padding: 14px 16px;
 }
 
 ::-webkit-input-placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: normal;
   font-weight: normal;
   font-size: 16px;
@@ -35,20 +42,28 @@
   opacity: 0.56;
 }
 
+.login_usuario{
+  display: flex;
+  align-items: center;
+  width:20%;
+  justify-content:flex-end;
+  margin-right: 20px;
+}
+
 .imagem_circulo {
-  width:50px;
-  height:50px;
+  width: 50px;
+  height: 50px;
 }
 
 .avatar_usuario {
-  width:100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50px;
 }
 
-.nome_usuario{
-  font-family: 'Inter', sans-serif;
+.nome_usuario {
+  font-family: "Inter", sans-serif;
   font-size: normal;
   font-weight: normal;
   font-size: 16px;
@@ -57,17 +72,24 @@
   margin-left: 1em;
 }
 
-.menu_navegacao{
+.conteudo-principal {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin: 40px 32px 0 32px;
+}
+
+.menu_navegacao {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-family: 'Inter', sans-serif;
-  font-size: normal;
+  font-family: "Inter", sans-serif;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 24px;
   color: #ffffff;
-  margin-left:32px;
+  width: 20%;
 }
 
 .item_menu {
@@ -77,7 +99,7 @@
   margin-bottom: 16px;
 }
 
-.item_menu_selecionado{
+.item_menu_selecionado {
   opacity: 1;
 }
 
@@ -85,22 +107,182 @@
   margin-left: 16px;
 }
 
-
 .fa-code {
-  background-color: #5081FB;
-  display:block;
+  background-color: #5081fb;
+  display: block;
   padding: 16px 14px;
   border-radius: 16px;
 }
 
 .fa-users {
   background-color: rgba(80, 129, 251, 0.16);
-  display:block;
+  display: block;
   padding: 16px 14px;
   border-radius: 16px;
   color: #ffffff;
 }
 
+.area_codigo {
+  display: flex;
+  flex-direction: column;
+  width:50%;
+}
+
+.botoes_area_texto {
+  display: flex;
+  flex-direction:row;
+  margin: 16px;
+}
+
+.circle-red{
+  color: #FF5F56;
+  margin-right: 8px;
+}
+
+.circle-yellow{
+  color: #FFBD2E;
+  margin-right: 8px;
+}
+
+.circle-green{
+  color: #27C93F;
+  margin-right: 8px;
+}
+
+.campo_texto {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  border: 32px solid #64f2ef;
+  border-radius:8px;
+}
+
+.area_digitacao {
+  color: #ffffff;
+  width:90%;
+  margin-left: 16px;
+  border: none;
+  
+}
 
 
+.botao-area-codigo{
+  font-family: "Inter", sans-serif;
+  font-size: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 32px;
+  width:100%;
+  border-radius:8px;
+  background: rgba(80, 129, 251, 0.08); 
+  padding: 16px auto;
+  border:none;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
 
+.area_finalizacao {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.titulos {
+  font-size: 12px;
+  letter-spacing:2px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.personalizacao{
+  margin-top: 40px;
+}
+
+.botao_finalizacao {
+  font-size: 16px;
+}
+
+.nome_projeto {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+.descricao_projeto {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 14px 16px 32px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  width:auto;
+}
+
+.botao-seletor-cor {
+  width:100%;
+  border-radius:8px;
+  height:56px;
+}
+
+.opcoes_personalizacao{
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  height:56px;
+  margin-bottom: 16px;
+}
+
+option {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.botao_finalizacao{
+  font-family: "Inter", sans-serif;
+  font-size: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(5, 29, 59, 1);
+  margin-top: 32px;
+  width:100%;
+  border-radius:8px;
+  background: rgba(80, 129, 251, 1);
+  padding: 16px auto;
+  border:none;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .botao_buscar {
+    position: absolute;
+    display: none;
+  }
+
+  .login_usuario {
+    position: absolute;
+    display: none;
+  }
+
+  .burguer-icon{
+    width:25px;
+    height:3px;
+    background-color: #fefefe;
+    margin: 5px;
+  }
+
+}

@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/0d9c088d0b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="normalize.css" />
+    <script
+      src="https://kit.fontawesome.com/0d9c088d0b.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
     </style>
@@ -14,30 +18,92 @@
   <body>
     <header>
       <section class="barra_navegacao">
-        <img src="imagens/image.png" class="logo" />
+        <div class="logo">
+          <img src="imagens/image.png" class="logo_img"/>
+        </div>
+        
         <input placeholder="Busque por algo" class="botao_buscar" />
-        <span class="imagem_circulo">
-          <img src="imagens/avatar.jpg" class="avatar_usuario" />
-        </span>
-        <p class="nome_usuario">Hermione</p>
+
+        <div class="burguer-icon">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+        <div class="login_usuario">
+          <span class="imagem_circulo">
+            <img src="imagens/avatar.jpg" class="avatar_usuario" />
+          </span>
+          <p class="nome_usuario">Hermione</p>
+        </div>
       </section>
     </header>
-    
+
     <main>
-      <section class="menu_navegacao">
-        <p>MENU</p>
-        <div class="item_menu" onclick="selecionaMenu(this)">
-          <i class="fas fa-code" ></i>
-          <p>Editor de texto</p>
+      <section class="conteudo-principal">
+        <div class="menu_navegacao">
+          <p class="titulos">menu</p>
+          <div class="item_menu" onclick="selecionaMenu(this)">
+            <i class="fas fa-code"></i>
+            <p>Editor de texto</p>
+          </div>
+          <div class="item_menu" onclick="selecionaMenu(this)">
+            <i class="fas fa-users"></i>
+            <p>Comunidade</p>
+          </div>
         </div>
-        <div class="item_menu" onclick="selecionaMenu(this)">
-          <i class="fas fa-users"></i>
-          <p>Comunidade</p>
+
+        <div class="area_codigo">
+          <div class="campo_texto">
+            <div class="botoes_area_texto">
+              <i class="fas fa-circle circle-red"></i>
+              <i class="fas fa-circle circle-yellow"></i>
+              <i class="fas fa-circle circle-green"></i>
+            </div>
+            <textarea rows="20" class="area_digitacao">
+              const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+              const unfold = (f, seed) => {
+              const go = (f, seed, acc) => {
+              const res = f(seed)
+                  return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                }
+                return go(f, seed, [])
+            </textarea>
+          </div>
+
+          <button class="botao-area-codigo" type="submit">
+            Visualizar com o highlight
+          </button>
+
+        </div>
+
+        <div class="area_finalizacao">
+          <h2 class="titulos">Seu projeto</h2>
+          <input
+            type="text"
+            placeholder="Nome do seu projeto"
+            class="nome_projeto"
+          />
+          <textarea
+            type="text"
+            placeholder="Descrição do seu projeto"
+            class="descricao_projeto"
+          ></textarea>
+          <h2 class="titulos personalizacao">Personalização</h2>
+          <select class="opcoes_personalizacao" name="opcoes_personalizacao">
+            <option value="Javascript" selected>Javascript</option>
+            <option value="PHP">PHP</option>
+            <option value="C#">C#</option>
+            <option value="Java">Java</option>
+          </select>
+          <input type="color" class="botao-seletor-cor" value="#64f2ef" />
+          <button class="botao_finalizacao">Salvar projeto</button>
         </div>
       </section>
-      <p></p>
     </main>
     <script src="menuLateral.js"></script>
   </body>
-
 </html>
